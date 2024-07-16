@@ -1,4 +1,4 @@
-package Base;
+package AdminBase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -6,13 +6,15 @@ import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BrowserLaunch {
-
+public class AdminBrowserLaunch {
+	
 	public static WebDriver driver;
-
+	
 	@BeforeTest
-	public static void setup() {
-
+	
+	public static void setup()
+	{
+		
 		// Setup ChromeDriver binary using WebDriverManager
 		WebDriverManager.chromedriver().setup();
 
@@ -20,8 +22,8 @@ public class BrowserLaunch {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		// Open a website
-		driver.get("https://goldbharat.com/");
+		driver.get("https://admin.goldbharat.com/login");
 
-	}	
-	
+	}
+
 }

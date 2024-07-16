@@ -6,12 +6,12 @@ import Base.BrowserLaunch;
 
 public class UserUi extends BrowserLaunch {
 
-	LoginPage loginPages;
+	UserPageUI loginPages;
 
 	@Test
 	public void LoginButtonTest() throws Exception {
 
-		loginPages = new LoginPage(driver);
+		loginPages = new UserPageUI(driver);
 		
 		loginPages.LiveRates();
 		loginPages.Register();

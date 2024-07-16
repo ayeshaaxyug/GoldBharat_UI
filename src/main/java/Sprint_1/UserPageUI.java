@@ -13,7 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import genericUtility.WebDriverUtility;
 
-public class LoginPage {
+public class UserPageUI {
 	public static WebDriver driver;
 
 	WebDriverUtility wUtility = new WebDriverUtility();
@@ -101,7 +101,7 @@ public class LoginPage {
 	@FindBy(xpath ="//button[.='Ok']") private WebElement OkBtn;
 	
 	
-	LoginPage(WebDriver driver) 
+	UserPageUI(WebDriver driver) 
 	{
 		PageFactory.initElements(driver, this);
 	}
