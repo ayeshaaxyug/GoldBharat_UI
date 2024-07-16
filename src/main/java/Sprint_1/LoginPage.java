@@ -38,7 +38,7 @@ public class LoginPage {
 	
 	@FindBy(xpath ="//img[@src='../../assets/googlplay.png']") private WebElement PlaystoreLnk;
 	
-	//@FindBy(xpath ="(//img[@class='googleplay'])[2]") private WebElement AppleStoreLnk;
+	@FindBy(xpath ="(//img[@class='googleplay'])[2]") private WebElement AppleStoreLnk;
 	
 	@FindBy(xpath ="//a[.=' X-YUG Technologies']") private WebElement XyugTechLnk;
 	
