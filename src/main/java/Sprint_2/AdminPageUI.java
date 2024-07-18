@@ -46,7 +46,7 @@ public class AdminPageUI {
 	
 	@FindBy(xpath ="(//input[@class='form-check-input'])[1]") private WebElement BootStrapBtn;
 	
-	@FindBy(xpath ="//button[.='Yes']") private WebElement YesBtn;
+	@FindBy(xpath ="//button[.='Yes']") private WebElement YesUserBtn;
 	
 	@FindBy(xpath ="(//i[@class='fa fa-pencil'])[1]") private WebElement EditBtn;
 	
@@ -66,18 +66,41 @@ public class AdminPageUI {
 	
 	@FindBy(xpath ="//a[.='Distributor Manage Order']") private WebElement DistributorManageOrderBtn;
 	
+	// Distributor Manage Order
+	
+	@FindBy(xpath ="//a[text()='Distributor Manage Order']") private WebElement DistributorManageOrderTextLnk;
+	
+	@FindBy(xpath ="//button[.='Buy Order']") private WebElement BuyOrderBtn; 
+	
+	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement BuyOrderSearchBtn; 
+	
+	@FindBy(xpath ="(//button[.='Inprocess'])[1]") private WebElement InProcessBtn;
+	
+	@FindBy(xpath ="(//button[.='Order Created'])[1]") private WebElement OrderCreatedBtn; 
+	
+	@FindBy(xpath ="(//button[.='Pending'])[1]") private WebElement PendingBtn;
+	
+	@FindBy(xpath ="//a[text()=' Next ']") private WebElement NextPageBtn; 
+	
+	@FindBy(xpath ="//a[text()=' Previous ']") private WebElement PreviousPageBtn; 
+	
+	@FindBy(xpath ="//button[.='Book Order']") private WebElement BookOrderBtn;
+	
+	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement BookOrderSearchBtn; 
+	
+	@FindBy(xpath ="//button[@class='logout']") private WebElement LogOutBtn; 
+	
+	@FindBy(xpath ="//button[text()='Yes']") private WebElement YesLogOutBtn; 
+	
 	/*
 	
-	@FindBy(xpath ="//a[.='Distributor Manage Order']") private WebElement DistributorManageOrderBtn;
+	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement BookOrderSearchBtn; 
 	
 	@FindBy(xpath ="") private WebElement ;
 	
 	@FindBy(xpath ="") private WebElement ;
 
 	*/
-	
-	
-	
 	
 	AdminPageUI(WebDriver driver) 
 	{
@@ -174,13 +197,12 @@ public class AdminPageUI {
 		BootStrapBtn.click();
 		Thread.sleep(2000);
 		
-		boolean YesButton = YesBtn.isDisplayed();
+		boolean YesButton = YesUserBtn.isDisplayed();
 		System.out.println("Yes Button is Displayed "+YesButton);
 		Thread.sleep(2000);
-		YesBtn.click();
+		YesUserBtn.click();
 		Thread.sleep(2000);
-		
-		
+				
 		boolean EditButton = EditBtn.isDisplayed();
 		System.out.println("Edit Button is Displayed "+EditButton);
 		Thread.sleep(2000);
@@ -239,6 +261,83 @@ public class AdminPageUI {
 		Thread.sleep(2000);
     }
 	
+    public void DistributorManageOrderPage() throws InterruptedException
+    {
+    	
+    	Thread.sleep(2000);
+		boolean DistributorManageOrderText = DistributorManageOrderTextLnk.isDisplayed();
+		System.out.println("Distributor Manage Order Text is Displayed "+DistributorManageOrderText);
+		Thread.sleep(2000);
 
+		boolean BuyOrder = BuyOrderBtn.isDisplayed();
+		System.out.println("BuyOrder is Displayed "+BuyOrder);
+		Thread.sleep(2000);
+		BuyOrderBtn.click();
+		Thread.sleep(2000);
+		
+		boolean BuyOrderSearch = BuyOrderSearchBtn.isDisplayed();
+		System.out.println("BuyOrder Search is Displayed "+BuyOrderSearch);
+		Thread.sleep(2000);
+
+		boolean Inprocess = InProcessBtn.isDisplayed();
+		System.out.println("Inprocess is Displayed "+Inprocess);
+		Thread.sleep(2000);
+		InProcessBtn.click();
+		Thread.sleep(2000);
+
+		boolean OrderCreated = OrderCreatedBtn.isDisplayed();
+		System.out.println("Order Created is Displayed "+OrderCreated);
+		Thread.sleep(2000);
+		OrderCreatedBtn.click();
+		Thread.sleep(2000);
+
+		boolean Pending = PendingBtn.isDisplayed();
+		System.out.println("Pending is Displayed "+Pending);
+		Thread.sleep(2000);
+		PendingBtn.click();
+		Thread.sleep(2000);
+
+		/*
+		
+		boolean NextPage = NextPageBtn.isDisplayed();
+		System.out.println("Next Page is Displayed "+NextPage);
+		Thread.sleep(2000);
+		NextPageBtn.click();
+		Thread.sleep(2000);
+
+		boolean PreviousPage = PreviousPageBtn.isDisplayed();
+		System.out.println("Previous Page is Displayed "+PreviousPage);
+		Thread.sleep(2000);
+		PreviousPageBtn.click();
+		Thread.sleep(2000);
+
+        */
+
+		boolean BookOrder = BookOrderBtn.isDisplayed();
+		System.out.println("Book Order is Displayed "+BookOrder);
+		Thread.sleep(2000);
+		BookOrderBtn.click();
+		Thread.sleep(2000);
+		
+		boolean BookOrderSearch = BookOrderSearchBtn.isDisplayed();
+		System.out.println("BookOrder Search is Displayed "+BookOrderSearch);
+		Thread.sleep(2000);
+		
+		boolean LogOut = LogOutBtn.isDisplayed();
+		System.out.println("LogOut is Displayed "+LogOut);
+		Thread.sleep(2000);
+		LogOutBtn.click();
+		Thread.sleep(2000);
+
+		boolean YesLogOut = YesLogOutBtn.isDisplayed();
+		System.out.println("Yes LogOut is Displayed "+YesLogOut);
+		Thread.sleep(2000);
+		YesLogOutBtn.click();
+		Thread.sleep(2000);
 	
+	driver.close();
+		
+    }
+
+    
 }

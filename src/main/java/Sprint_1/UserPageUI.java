@@ -18,9 +18,9 @@ public class UserPageUI {
 
 	WebDriverUtility wUtility = new WebDriverUtility();
 	
-	@FindBy(xpath = "//button[@class='loginbotn']") private WebElement loginBtn;
-	
 	@FindBy(xpath = "//li[.=' Live Rates ']") private WebElement LiveRatesLnk; 
+	
+	@FindBy(xpath = "//button[@class='loginbotn']") private WebElement loginBtn;
 	
 	@FindBy(xpath ="//span[@class='Register-spans']") private WebElement LoginNowBtn;
 	
@@ -351,6 +351,7 @@ public class UserPageUI {
 			LiveRatesLnk.click();	
 			Thread.sleep(2000);
 			
-			
 		}
+		
+		
 }

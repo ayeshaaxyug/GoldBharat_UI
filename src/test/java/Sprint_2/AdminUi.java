@@ -17,7 +17,7 @@ public class AdminUi extends AdminBrowserLaunch {
 		AdminloginPages.LoginPage();
 		AdminloginPages.DashboardPage();
 		AdminloginPages.ManageDistributorPage();
-		
+		AdminloginPages.DistributorManageOrderPage();
 		
 	}
 
