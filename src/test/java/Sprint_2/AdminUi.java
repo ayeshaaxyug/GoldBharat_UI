@@ -19,6 +19,7 @@ public class AdminUi extends AdminBrowserLaunch {
 		AdminloginPages.ManageDistributorPage();
 		AdminloginPages.DistributorManageOrderPage();
 		
+		driver.close();
 	}
 
 }

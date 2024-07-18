@@ -20,6 +20,8 @@ public class UserPageUI {
 	
 	@FindBy(xpath = "//li[.=' Live Rates ']") private WebElement LiveRatesLnk; 
 	
+	// Login
+	
 	@FindBy(xpath = "//button[@class='loginbotn']") private WebElement loginBtn;
 	
 	@FindBy(xpath ="//span[@class='Register-spans']") private WebElement LoginNowBtn;
@@ -31,6 +33,8 @@ public class UserPageUI {
 	@FindBy(xpath ="//h6[.='OTP Verification']") private WebElement OtpVerify;
 	
 	@FindBy(xpath ="(//input[@autocomplete='one-time-code'])[1]") private WebElement OtpEdt;
+	
+	// Dashboard Page
 	
 	@FindBy(xpath ="(//img[@class='goldbharathimg'])[1]") private WebElement LogoLnk;
 	
@@ -61,6 +65,8 @@ public class UserPageUI {
 	@FindBy(xpath ="//select[@name='typeSelect']") private WebElement TypeSelectDrpDwn;
 	
 	@FindBy(xpath ="//option[.='Silver']") private WebElement SilverLnk;
+	
+	// Dashboard Page
 	
 	@FindBy(xpath ="//li[.=' Margin ']") private WebElement MarginLnk;
 	
@@ -147,7 +153,7 @@ public class UserPageUI {
 			System.out.println("Mobile Number Feild is Displayed :"+Login);
 			
 			Thread.sleep(2000);
-			MobileNumberEdt.sendKeys("6309631698");
+			MobileNumberEdt.sendKeys("8331827870");
 			Thread.sleep(2000);
 			LoginBtn.click();
 			Thread.sleep(2000);

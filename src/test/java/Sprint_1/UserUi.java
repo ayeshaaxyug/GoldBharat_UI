@@ -18,6 +18,8 @@ public class UserUi extends BrowserLaunch {
 		loginPages.Login();
 		loginPages.Dashboard(driver);
 		
+		driver.close();
+		
 	}
 
 }

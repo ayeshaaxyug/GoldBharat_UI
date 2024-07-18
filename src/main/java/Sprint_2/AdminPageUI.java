@@ -56,7 +56,7 @@ public class AdminPageUI {
 	
 	@FindBy(xpath ="//span[.='Manage Distributor']") private WebElement ManageDistributorBtn;
 	
-	@FindBy(xpath ="(//i[@class='fa fa-eye'])[1]") private WebElement EyeBtn;
+	@FindBy(xpath ="(//button[@class='btn btn-sm ntn-icon btn-pure btn-pure btn-default on-default ml-4 button-edit gap-button'])[1]") private WebElement EyeBtn;
 	
 	@FindBy(xpath ="//h4[.='KYC Details']") private WebElement KycDetailsPageLnk;
 	
@@ -233,7 +233,7 @@ public class AdminPageUI {
 		
 		boolean EyeButton = EyeBtn.isDisplayed();
 		System.out.println("Eye Button is Displayed "+EyeButton);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		EyeBtn.click();
 		Thread.sleep(2000);
 		
@@ -334,10 +334,6 @@ public class AdminPageUI {
 		Thread.sleep(2000);
 		YesLogOutBtn.click();
 		Thread.sleep(2000);
-	
-	driver.close();
-		
     }
-
-    
+	
 }
