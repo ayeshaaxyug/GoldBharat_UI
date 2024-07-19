@@ -4,10 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import genericUtility.WebDriverUtility;
 
 public class AdminPageUI {
+	
+	// All Operations For UI
+	
 	public static WebDriver driver;
 	
 	WebDriverUtility wUtility = new WebDriverUtility();
@@ -92,15 +94,6 @@ public class AdminPageUI {
 	
 	@FindBy(xpath ="//button[text()='Yes']") private WebElement YesLogOutBtn; 
 	
-	/*
-	
-	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement BookOrderSearchBtn; 
-	
-	@FindBy(xpath ="") private WebElement ;
-	
-	@FindBy(xpath ="") private WebElement ;
-
-	*/
 	
 	AdminPageUI(WebDriver driver) 
 	{

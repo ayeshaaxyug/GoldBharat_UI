@@ -8,6 +8,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AdminBrowserLaunch {
 	
+	// Only Admin Browser 
+	
 	public static WebDriver driver;
 	
 	@BeforeTest

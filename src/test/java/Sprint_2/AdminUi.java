@@ -8,6 +8,8 @@ public class AdminUi extends AdminBrowserLaunch {
 	
 	AdminPageUI AdminloginPages;
 	
+	// Calling Methods
+	
 	@Test
 	public void AdminLoginTest() throws Exception
 	{
