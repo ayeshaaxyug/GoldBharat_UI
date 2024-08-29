@@ -9,8 +9,8 @@ public class UserUi extends BrowserLaunch {
 	UserPageUI loginPages;
 
 	@Test
-	public void LoginButtonTest() throws Exception {
-
+	public void LoginButtonTest() throws Exception
+	{
 		loginPages = new UserPageUI(driver);
 		
 		loginPages.LiveRates();

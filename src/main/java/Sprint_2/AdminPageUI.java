@@ -17,81 +17,47 @@ public class AdminPageUI {
 	//Login Page
 	
 	@FindBy(xpath ="//div[@class='admin_login_logo']") private WebElement LogoLnk;
-	
-	@FindBy(xpath ="//input[@formcontrolname='userId']") private WebElement UserIdLnk;
-	 
-	@FindBy(xpath ="//input[@formcontrolname='password']") private WebElement PasswordLnk;
-	
+	@FindBy(xpath ="//input[@formcontrolname='userId']") private WebElement UserIdLnk;	 
+	@FindBy(xpath ="//input[@formcontrolname='password']") private WebElement PasswordLnk;	
 	@FindBy(xpath ="//button[.='Login']") private WebElement LoginBtnLnk;
 	
 	//Dashboard Page
 	
-	@FindBy(xpath ="//a[text()='Dashboard']") private WebElement DashboardTextLnk;
-	
-	@FindBy(xpath ="//div[@class='header_valuer']") private WebElement AdminLnk;
-	
-	@FindBy(xpath ="//i[@class='fa-solid fa-ellipsis-vertical icon-vertical ng-star-inserted']") private WebElement FullPageLnk;
-	
-	@FindBy(xpath ="//i[@class='fa-solid fa-bell user-icon']") private WebElement NotificationLnk;
-	
-	@FindBy(xpath ="//span[.='Dashboard']") private WebElement DashboardLnk ;
-	
-	@FindBy(xpath ="//p[.=' All Distributor ']") private WebElement AllDistributorLnk;
-	
+	@FindBy(xpath ="//a[text()='Dashboard']") private WebElement DashboardTextLnk;	
+	@FindBy(xpath ="//div[@class='header_valuer']") private WebElement AdminLnk;	
+	@FindBy(xpath ="//i[@class='fa-solid fa-ellipsis-vertical icon-vertical ng-star-inserted']") private WebElement FullPageLnk;	
+	@FindBy(xpath ="//i[@class='fa-solid fa-bell user-icon']") private WebElement NotificationLnk;	
+	@FindBy(xpath ="//span[.='Dashboard']") private WebElement DashboardLnk ;	
+	@FindBy(xpath ="//p[.=' All Distributor ']") private WebElement AllDistributorLnk;	
 	@FindBy(xpath ="//p[.=' Manage']") private WebElement ManageLnk;
 	
 	//Manage Distributor Page
 	
-	@FindBy(xpath ="//a[text()='Manage Distributor']") private WebElement ManageDistributorTextLnk;
-	
-	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement SearchEdt;
-	
-	@FindBy(xpath ="(//input[@class='form-check-input'])[1]") private WebElement BootStrapBtn;
-	
-	@FindBy(xpath ="//button[.='Yes']") private WebElement YesUserBtn;
-	
-	@FindBy(xpath ="(//i[@class='fa fa-pencil'])[1]") private WebElement EditBtn;
-	
-	@FindBy(xpath ="//label[.='KYC Status']") private WebElement KycStatusLnk;
-	
-	@FindBy(xpath ="//span[.='Submit']") private WebElement SubmitBtn;
-	
-	@FindBy(xpath ="//span[.='Manage Distributor']") private WebElement ManageDistributorBtn;
-	
-	@FindBy(xpath ="(//button[@class='btn btn-sm ntn-icon btn-pure btn-pure btn-default on-default ml-4 button-edit gap-button'])[1]") private WebElement EyeBtn;
-	
-	@FindBy(xpath ="//h4[.='KYC Details']") private WebElement KycDetailsPageLnk;
-	
-	@FindBy(xpath ="//h5[.='Documents']") private WebElement DocumentsTextLnk;
-	
-	@FindBy(xpath ="(//button[.='Download'])[1]") private WebElement DownloadBtn;
-	
+	@FindBy(xpath ="//a[text()='Manage Distributor']") private WebElement ManageDistributorTextLnk;	
+	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement SearchEdt;	
+	@FindBy(xpath ="(//input[@class='form-check-input'])[1]") private WebElement BootStrapBtn;	
+	@FindBy(xpath ="//button[.='Yes']") private WebElement YesUserBtn;	
+	@FindBy(xpath ="(//i[@class='fa fa-pencil'])[1]") private WebElement EditBtn;	
+	@FindBy(xpath ="//label[.='KYC Status']") private WebElement KycStatusLnk;	
+	@FindBy(xpath ="//span[.='Submit']") private WebElement SubmitBtn;	
+	@FindBy(xpath ="//span[.='Manage Distributor']") private WebElement ManageDistributorBtn;	
+	@FindBy(xpath ="(//button[@class='btn btn-sm ntn-icon btn-pure btn-pure btn-default on-default ml-4 button-edit gap-button'])[1]") private WebElement EyeBtn;	
+	@FindBy(xpath ="//h4[.='KYC Details']") private WebElement KycDetailsPageLnk;	
+	@FindBy(xpath ="//h5[.='Documents']") private WebElement DocumentsTextLnk;	
+	@FindBy(xpath ="(//button[.='Download'])[1]") private WebElement DownloadBtn;	
 	@FindBy(xpath ="//a[.='Distributor Manage Order']") private WebElement DistributorManageOrderBtn;
 	
 	// Distributor Manage Order
 	
-	@FindBy(xpath ="//a[text()='Distributor Manage Order']") private WebElement DistributorManageOrderTextLnk;
-	
-	@FindBy(xpath ="//button[.='Buy Order']") private WebElement BuyOrderBtn; 
-	
-	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement BuyOrderSearchBtn; 
-	
-	@FindBy(xpath ="(//button[.='Inprocess'])[1]") private WebElement InProcessBtn;
-	
-	@FindBy(xpath ="(//button[.='Order Created'])[1]") private WebElement OrderCreatedBtn; 
-	
-	@FindBy(xpath ="(//button[.='Pending'])[1]") private WebElement PendingBtn;
-	
-	@FindBy(xpath ="//a[text()=' Next ']") private WebElement NextPageBtn; 
-	
-	@FindBy(xpath ="//a[text()=' Previous ']") private WebElement PreviousPageBtn; 
-	
-	@FindBy(xpath ="//button[.='Book Order']") private WebElement BookOrderBtn;
-	
-	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement BookOrderSearchBtn; 
-	
-	@FindBy(xpath ="//button[@class='logout']") private WebElement LogOutBtn; 
-	
+	@FindBy(xpath ="//a[text()='Distributor Manage Order']") private WebElement DistributorManageOrderTextLnk;	
+	@FindBy(xpath ="//button[.='Buy Order']") private WebElement BuyOrderBtn; 	
+	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement BuyOrderSearchBtn; 	
+	@FindBy(xpath ="(//button[.='Inprocess'])[1]") private WebElement InProcessBtn;	
+	@FindBy(xpath ="(//button[.='Order Created'])[1]") private WebElement OrderCreatedBtn; 	
+	@FindBy(xpath ="(//button[.='Pending'])[1]") private WebElement PendingBtn;	
+	@FindBy(xpath ="//button[.='Book Order']") private WebElement BookOrderBtn;	
+	@FindBy(xpath ="//input[@placeholder='Search']") private WebElement BookOrderSearchBtn; 	
+	@FindBy(xpath ="//button[@class='logout']") private WebElement LogOutBtn; 	
 	@FindBy(xpath ="//button[text()='Yes']") private WebElement YesLogOutBtn; 
 	
 	
@@ -133,6 +99,7 @@ public class AdminPageUI {
     public void DashboardPage() throws Exception	
 	{
 		
+    	Thread.sleep(3000);
 		boolean DashboardText = DashboardTextLnk.isDisplayed();
 		System.out.println("Dashboard Text is Displayed "+DashboardText);
 		Thread.sleep(2000);
@@ -176,6 +143,7 @@ public class AdminPageUI {
     public void ManageDistributorPage() throws Exception
     {
     	
+    	Thread.sleep(3000);
 		boolean ManageDistributorText = ManageDistributorTextLnk.isDisplayed();
 		System.out.println("Manage Distributor Text is Displayed "+ManageDistributorText);
 		Thread.sleep(2000);
@@ -185,7 +153,7 @@ public class AdminPageUI {
 		Thread.sleep(2000);
 
 		boolean BootStrapButton = BootStrapBtn.isDisplayed();
-		System.out.println("BootStrapButton is Displayed "+BootStrapButton);
+		System.out.println("BootStrap Button is Displayed "+BootStrapButton);
 		Thread.sleep(2000);
 		BootStrapBtn.click();
 		Thread.sleep(2000);
@@ -206,7 +174,7 @@ public class AdminPageUI {
 		wUtility.scrollPageDown(6);
 
 		boolean KycStatus = KycStatusLnk.isDisplayed();
-		System.out.println("KycStatus is Displayed "+KycStatus);
+		System.out.println("Kyc Status is Displayed "+KycStatus);
 		Thread.sleep(2000);
 
 	    wUtility = new WebDriverUtility();
@@ -238,17 +206,17 @@ public class AdminPageUI {
 		wUtility.scrollPageDown(2);
 		
 		boolean DocumentsText = DocumentsTextLnk.isDisplayed();
-		System.out.println("Documents Text Page is Displayed "+DocumentsText);
+		System.out.println("Documents Text is Displayed "+DocumentsText);
 		Thread.sleep(2000);
 
 		boolean DownloadButton = DownloadBtn.isDisplayed();
-		System.out.println("Download Button Page is Displayed "+DownloadButton);
+		System.out.println("Download Button is Displayed "+DownloadButton);
 		Thread.sleep(2000);
 		DownloadBtn.click();
 		Thread.sleep(2000);
 		
 		boolean DistributorManageOrderButton = DistributorManageOrderBtn.isDisplayed();
-		System.out.println("Distributor Manage Order Button Page is Displayed "+DistributorManageOrderButton);
+		System.out.println("Distributor Manage Order Button is Displayed "+DistributorManageOrderButton);
 		Thread.sleep(2000);
 		DistributorManageOrderBtn.click();
 		Thread.sleep(2000);
@@ -257,19 +225,19 @@ public class AdminPageUI {
     public void DistributorManageOrderPage() throws InterruptedException
     {
     	
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
 		boolean DistributorManageOrderText = DistributorManageOrderTextLnk.isDisplayed();
 		System.out.println("Distributor Manage Order Text is Displayed "+DistributorManageOrderText);
 		Thread.sleep(2000);
 
 		boolean BuyOrder = BuyOrderBtn.isDisplayed();
-		System.out.println("BuyOrder is Displayed "+BuyOrder);
+		System.out.println("Buy Order is Displayed "+BuyOrder);
 		Thread.sleep(2000);
 		BuyOrderBtn.click();
 		Thread.sleep(2000);
 		
 		boolean BuyOrderSearch = BuyOrderSearchBtn.isDisplayed();
-		System.out.println("BuyOrder Search is Displayed "+BuyOrderSearch);
+		System.out.println("Buy Order Search is Displayed "+BuyOrderSearch);
 		Thread.sleep(2000);
 
 		boolean Inprocess = InProcessBtn.isDisplayed();
@@ -279,32 +247,16 @@ public class AdminPageUI {
 		Thread.sleep(2000);
 
 		boolean OrderCreated = OrderCreatedBtn.isDisplayed();
-		System.out.println("Order Created is Displayed "+OrderCreated);
+		System.out.println("Order Created Text is Displayed "+OrderCreated);
 		Thread.sleep(2000);
 		OrderCreatedBtn.click();
 		Thread.sleep(2000);
 
 		boolean Pending = PendingBtn.isDisplayed();
-		System.out.println("Pending is Displayed "+Pending);
+		System.out.println("Pending Text is Displayed "+Pending);
 		Thread.sleep(2000);
 		PendingBtn.click();
 		Thread.sleep(2000);
-
-		/*
-		
-		boolean NextPage = NextPageBtn.isDisplayed();
-		System.out.println("Next Page is Displayed "+NextPage);
-		Thread.sleep(2000);
-		NextPageBtn.click();
-		Thread.sleep(2000);
-
-		boolean PreviousPage = PreviousPageBtn.isDisplayed();
-		System.out.println("Previous Page is Displayed "+PreviousPage);
-		Thread.sleep(2000);
-		PreviousPageBtn.click();
-		Thread.sleep(2000);
-
-        */
 
 		boolean BookOrder = BookOrderBtn.isDisplayed();
 		System.out.println("Book Order is Displayed "+BookOrder);
